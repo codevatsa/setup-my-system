@@ -5,8 +5,7 @@ Steps to setup oh-my-zsh along with the necessary plugins and fonts
 ## Installation
 1. Install zsh and make it as default for shell
   ```zsh
-  sudo apt install zsh \
-  chsh -s $(which zsh)
+  sudo apt install zsh && chsh -s $(which zsh)
   ```
 
 2. Install [oh my zsh](https://ohmyz.sh/#install)
