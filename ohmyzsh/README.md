@@ -19,30 +19,31 @@ Steps to setup oh-my-zsh along with the necessary plugins and fonts
   ```
 4. Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin
 
-  - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
+    - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
-    ```zsh
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    ```
-  - Add the plugin to the list of plugins for Oh My Zsh to load inside `~/.zshrc`(I've already added in .zshrc in my repo):
+      ```zsh
+      git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+      ```
+    - Add the plugin to the list of plugins for Oh My Zsh to load inside `~/.zshrc`(I've already added in .zshrc in my repo):
 
-    ```zsh
-    plugins=( 
-        # other plugins...
-        zsh-autosuggestions
-    )
-    ```
+      ```zsh
+      plugins=( 
+          # other plugins...
+          zsh-autosuggestions
+      )
+      ```
 5. Install fira code for fonts and set it as terminal font in settings
-    ```zsh
-    sudo apt install fonts-firacode 
-    ```
+  ```zsh
+  sudo apt install fonts-firacode 
+  ```
 
 6. Set terminal profile theme to Dissonance 43 in [Gogh](https://mayccoll.github.io/Gogh/)
-    ```zsh
-      bash -c  "$(wget -qO- https://git.io/vQgMr)" 
-    ``` 
+  ```zsh
+  bash -c  "$(wget -qO- https://git.io/vQgMr)" 
+  ``` 
 7. Copy [alias file](supercharge.zsh) to custom folder under oh-my-zsh
-    ```zsh
-      cp ohmyzsh/supercharge.zsh ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/supercharge.zsh
-    ```
+  ```zsh
+  cp ohmyzsh/supercharge.zsh ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/supercharge.zsh
+  ```
+
 Done !
