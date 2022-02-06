@@ -19,21 +19,22 @@ Steps to setup oh-my-zsh along with the necessary plugins and fonts
   ```
     # Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 
-4. Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin
-
-    - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
+4. Useful plugins for ohmyzsh 
+    - Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
       ```zsh
       git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
       ```
-    - Add the plugin to the list of plugins for Oh My Zsh to load inside `~/.zshrc`(I've already added in .zshrc in my repo):
-
+    - Add [command-not-found plugin](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/command-not-found/command-not-found.plugin.zsh) which provides bash like outputs for faulty installs. This comes with default install of ohmyzsh so no further install is needed.
+    - Add these plugins to the list of plugins for Oh My Zsh to load inside `~/.zshrc`(I've already included it in .zshrc file in my repo)
       ```zsh
       plugins=( 
           # other plugins...
           zsh-autosuggestions
+          command-not-found
       )
       ```
+
 5. Install fira code for fonts and set it as terminal font in settings
   ```zsh
   sudo apt install fonts-firacode 
