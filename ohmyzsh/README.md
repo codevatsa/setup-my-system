@@ -13,10 +13,12 @@ Steps to setup oh-my-zsh along with the necessary plugins and fonts
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ```
 
-3. Install [Powerlevel10k - p10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) plugin
+3. Install [Powerlevel10k - p10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) plugin and change theme in zsh
   ```zsh
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
+    # Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+
 4. Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin
 
     - Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
